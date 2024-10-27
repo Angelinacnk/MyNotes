@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file> <!-- Setzt die Anmeldeseite als Startseite -->
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>UpdateNoteServlet</servlet-name>
+        <servlet-class>com.example.test6.UpdateNoteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateNoteServlet</servlet-name>
+        <url-pattern>/updateNote</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteNoteServlet</servlet-name>
+        <servlet-class>com.example.test6.DeleteNoteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteNoteServlet</servlet-name>
+        <url-pattern>/DeleteNoteServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
